@@ -1,0 +1,28 @@
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.h {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    color: rgba(0, 0, 0, 0.9);
+}
+img {
+    display: block;
+}
+svg {
+    color: #fff;
+    cursor: pointer;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
