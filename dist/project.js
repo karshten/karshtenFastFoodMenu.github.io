@@ -80,7 +80,7 @@ var MenuItem = /*#__PURE__*/function () {
   _createClass(MenuItem, [{
     key: "render",
     value: function render() {
-      return "\n            <div class=\"item\">\n                <img class=\"img-item\" src=\"".concat(this.img, "\" alt=\"").concat(this.title, "\">\n                <h3 class=\"item-header\">").concat(this.title, "</h3>\n                <p class=\"item-desc\">").concat(this.description, "</p>\n                <div class=\"cost_count\">\n                    <div class=\"wrap-cost\">\n                        <p class=\"oldCost\">$").concat(this.old_price, "</p>\n                        <p class=\"newCost\">$").concat(this.price, "</p>\n                    </div>\n                    <div class=\"count\">\n                        <p class=\"minus\">-</p>\n                        <p>1</p>\n                        <p class=\"plus\">+</p>\n                    </div>\n                </div>\n                <div class=\"wrap-addBtn\">\n                    <button class=\"addBtn\">Add to card</button>\n                    <div class=\"wrap-icon favorites\">\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\"\n                             class=\"bi bi-bookmark\" viewBox=\"0 0 16 16\">\n                            <path d=\"M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z\"/>\n                        </svg>\n                    </div>\n                </div>\n            </div>\n            ");
+      return "\n            <div class=\"item\">\n                <img class=\"img-item\" src=\"".concat(this.img, "\" alt=\"").concat(this.title, "\">\n                <h3 class=\"item-header\">").concat(this.title, "</h3>\n                <p class=\"item-desc\">").concat(this.description, "</p>\n                <div class=\"cost_count\">\n                    <div class=\"wrap-cost\">\n                        <p class=\"oldCost\">$").concat(this.old_price, "</p>\n                        <p class=\"newCost\">$").concat(this.price, "</p>\n                    </div>\n                    <div class=\"count\">\n                        <p class=\"minus\">-</p>\n                        <p>1</p>\n                        <p class=\"plus\">+</p>\n                    </div>\n                </div>\n                <div class=\"wrap-addBtn\">\n                    <button id=\"btn\" class=\"addBtn\">Add to card</button>\n                    <div id=\"addFavorite\" class=\"wrap-icon favorites\">\n                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\"\n                             class=\"bi bi-bookmark\" viewBox=\"0 0 16 16\">\n                            <path d=\"M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z\"/>\n                        </svg>\n                    </div>\n                </div>\n            </div>\n            ");
     }
   }]);
 
@@ -257,217 +257,433 @@ var menu = [new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["defa
   id: 1,
   title: "Huge cheeseburger",
   category: "Burger",
-  price: 2.55,
   old_price: 3.55,
+  price: 2.55,
   img: "./images/unsplash_48F-Uvx9wvw.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 2,
   title: "Pizza",
   category: "Pizza",
-  price: 3.55,
   old_price: 5.55,
+  price: 3.55,
   img: "./images/image 2.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 3,
   title: "Sandwich",
   category: "Sandwich",
-  price: 2.55,
-  old_price: 1.55,
+  old_price: 2.55,
+  price: 1.55,
   img: "./images/image 3.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 4,
+  title: "Salad",
+  category: "Salad",
+  old_price: 4.55,
+  price: 3.55,
+  img: "./images/unsplash_xeTv9N2FjXA.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 5,
+  title: "Desert",
+  category: "Desert",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 7.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 6,
+  title: "Drink",
+  category: "Drink",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 9.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
   title: "Huge cheeseburger",
   category: "Burger",
-  price: 2.55,
   old_price: 3.55,
+  price: 2.55,
   img: "./images/unsplash_48F-Uvx9wvw.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 2,
   title: "Pizza",
   category: "Pizza",
-  price: 3.55,
   old_price: 5.55,
+  price: 3.55,
   img: "./images/image 2.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 3,
   title: "Sandwich",
   category: "Sandwich",
-  price: 2.55,
-  old_price: 1.55,
+  old_price: 2.55,
+  price: 1.55,
   img: "./images/image 3.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 4,
+  title: "Salad",
+  category: "Salad",
+  old_price: 4.55,
+  price: 3.55,
+  img: "./images/unsplash_xeTv9N2FjXA.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 5,
+  title: "Desert",
+  category: "Desert",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 7.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 6,
+  title: "Drink",
+  category: "Drink",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 9.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
   title: "Huge cheeseburger",
   category: "Burger",
-  price: 2.55,
   old_price: 3.55,
+  price: 2.55,
   img: "./images/unsplash_48F-Uvx9wvw.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 2,
   title: "Pizza",
   category: "Pizza",
-  price: 3.55,
   old_price: 5.55,
+  price: 3.55,
   img: "./images/image 2.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 3,
   title: "Sandwich",
   category: "Sandwich",
-  price: 2.55,
-  old_price: 1.55,
+  old_price: 2.55,
+  price: 1.55,
   img: "./images/image 3.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 4,
+  title: "Salad",
+  category: "Salad",
+  old_price: 4.55,
+  price: 3.55,
+  img: "./images/unsplash_xeTv9N2FjXA.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 5,
+  title: "Desert",
+  category: "Desert",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 7.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 6,
+  title: "Drink",
+  category: "Drink",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 9.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
   title: "Huge cheeseburger",
   category: "Burger",
-  price: 2.55,
   old_price: 3.55,
+  price: 2.55,
   img: "./images/unsplash_48F-Uvx9wvw.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 2,
   title: "Pizza",
   category: "Pizza",
-  price: 3.55,
   old_price: 5.55,
+  price: 3.55,
   img: "./images/image 2.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 3,
   title: "Sandwich",
   category: "Sandwich",
-  price: 2.55,
-  old_price: 1.55,
+  old_price: 2.55,
+  price: 1.55,
   img: "./images/image 3.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 4,
+  title: "Salad",
+  category: "Salad",
+  old_price: 4.55,
+  price: 3.55,
+  img: "./images/unsplash_xeTv9N2FjXA.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 5,
+  title: "Desert",
+  category: "Desert",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 7.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 6,
+  title: "Drink",
+  category: "Drink",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 9.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
   title: "Huge cheeseburger",
   category: "Burger",
-  price: 2.55,
   old_price: 3.55,
+  price: 2.55,
   img: "./images/unsplash_48F-Uvx9wvw.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 2,
   title: "Pizza",
   category: "Pizza",
-  price: 3.55,
   old_price: 5.55,
+  price: 3.55,
   img: "./images/image 2.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 3,
   title: "Sandwich",
   category: "Sandwich",
-  price: 2.55,
-  old_price: 1.55,
+  old_price: 2.55,
+  price: 1.55,
   img: "./images/image 3.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 4,
+  title: "Salad",
+  category: "Salad",
+  old_price: 4.55,
+  price: 3.55,
+  img: "./images/unsplash_xeTv9N2FjXA.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 5,
+  title: "Desert",
+  category: "Desert",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 7.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 6,
+  title: "Drink",
+  category: "Drink",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 9.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
   title: "Huge cheeseburger",
   category: "Burger",
-  price: 2.55,
   old_price: 3.55,
+  price: 2.55,
   img: "./images/unsplash_48F-Uvx9wvw.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 2,
   title: "Pizza",
   category: "Pizza",
-  price: 3.55,
   old_price: 5.55,
+  price: 3.55,
   img: "./images/image 2.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 3,
   title: "Sandwich",
   category: "Sandwich",
-  price: 2.55,
-  old_price: 1.55,
+  old_price: 2.55,
+  price: 1.55,
   img: "./images/image 3.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 4,
+  title: "Salad",
+  category: "Salad",
+  old_price: 4.55,
+  price: 3.55,
+  img: "./images/unsplash_xeTv9N2FjXA.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 5,
+  title: "Desert",
+  category: "Desert",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 7.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 6,
+  title: "Drink",
+  category: "Drink",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 9.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
   title: "Huge cheeseburger",
   category: "Burger",
-  price: 2.55,
   old_price: 3.55,
+  price: 2.55,
   img: "./images/unsplash_48F-Uvx9wvw.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 2,
   title: "Pizza",
   category: "Pizza",
-  price: 3.55,
   old_price: 5.55,
+  price: 3.55,
   img: "./images/image 2.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 3,
   title: "Sandwich",
   category: "Sandwich",
-  price: 2.55,
-  old_price: 1.55,
+  old_price: 2.55,
+  price: 1.55,
   img: "./images/image 3.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 4,
+  title: "Salad",
+  category: "Salad",
+  old_price: 4.55,
+  price: 3.55,
+  img: "./images/unsplash_xeTv9N2FjXA.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 5,
+  title: "Desert",
+  category: "Desert",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 7.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 6,
+  title: "Drink",
+  category: "Drink",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 9.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
   title: "Huge cheeseburger",
   category: "Burger",
-  price: 2.55,
   old_price: 3.55,
+  price: 2.55,
   img: "./images/unsplash_48F-Uvx9wvw.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 2,
   title: "Pizza",
   category: "Pizza",
-  price: 3.55,
   old_price: 5.55,
+  price: 3.55,
   img: "./images/image 2.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 3,
   title: "Sandwich",
   category: "Sandwich",
-  price: 2.55,
-  old_price: 1.55,
+  old_price: 2.55,
+  price: 1.55,
   img: "./images/image 3.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 4,
+  title: "Salad",
+  category: "Salad",
+  old_price: 4.55,
+  price: 3.55,
+  img: "./images/unsplash_xeTv9N2FjXA.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 5,
+  title: "Desert",
+  category: "Desert",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 7.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 6,
+  title: "Drink",
+  category: "Drink",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 9.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
   title: "Huge cheeseburger",
   category: "Burger",
-  price: 2.55,
   old_price: 3.55,
+  price: 2.55,
   img: "./images/unsplash_48F-Uvx9wvw.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 2,
   title: "Pizza",
   category: "Pizza",
-  price: 3.55,
   old_price: 5.55,
+  price: 3.55,
   img: "./images/image 2.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 3,
   title: "Sandwich",
   category: "Sandwich",
-  price: 2.55,
-  old_price: 1.55,
+  old_price: 2.55,
+  price: 1.55,
   img: "./images/image 3.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 4,
+  title: "Salad",
+  category: "Salad",
+  old_price: 4.55,
+  price: 3.55,
+  img: "./images/unsplash_xeTv9N2FjXA.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 5,
+  title: "Desert",
+  category: "Desert",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 7.png",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  id: 6,
+  title: "Drink",
+  category: "Drink",
+  old_price: 3.55,
+  price: 3.55,
+  img: "./images/image 9.png",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 })];
 
@@ -597,7 +813,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _data_favoritesData__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./data/favoritesData */ "./data/favoritesData.js");
 
 var btnSearch = document.querySelector('.loop');
-var inputSearch = document.querySelector('#inputSearch');
+var inputSearch = document.querySelector('.inputSearch');
 var closeBtn = document.querySelector('.close_btn');
 
 function showInput() {
@@ -735,33 +951,93 @@ function sliderFunc(i) {
   showTabContent(i);
 }
 
-function sliderIf(string, string2, string3, i, i2, i3) {
-  if (menuFilter === string) {
-    menuFilter = string3;
-    sliderFunc(i3);
+var menuCategoryNames = ['Burger', 'Pizza', 'Sandwich', 'Salad', 'Desert', 'Drink'];
+
+function sliderIfForLeftSlide(array) {
+  if (menuFilter === array[0]) {
+    menuFilter = array[5];
+    sliderFunc(5);
     renderMenu(_data_data__WEBPACK_IMPORTED_MODULE_2__.menu.filter(function (obj) {
-      return obj.category === string3;
+      return obj.category === array[5];
     }));
-  } else if (menuFilter === string3) {
-    menuFilter = string2;
-    sliderFunc(i2);
+  } else if (menuFilter === array[1]) {
+    menuFilter = array[0];
+    sliderFunc(0);
     renderMenu(_data_data__WEBPACK_IMPORTED_MODULE_2__.menu.filter(function (obj) {
-      return obj.category === string2;
+      return obj.category === array[0];
     }));
-  } else if (menuFilter === string2) {
-    menuFilter = string;
-    sliderFunc(i);
+  } else if (menuFilter === array[2]) {
+    menuFilter = array[1];
+    sliderFunc(1);
     renderMenu(_data_data__WEBPACK_IMPORTED_MODULE_2__.menu.filter(function (obj) {
-      return obj.category === string;
+      return obj.category === array[1];
+    }));
+  } else if (menuFilter === array[3]) {
+    menuFilter = array[2];
+    sliderFunc(2);
+    renderMenu(_data_data__WEBPACK_IMPORTED_MODULE_2__.menu.filter(function (obj) {
+      return obj.category === array[2];
+    }));
+  } else if (menuFilter === array[4]) {
+    menuFilter = array[3];
+    sliderFunc(3);
+    renderMenu(_data_data__WEBPACK_IMPORTED_MODULE_2__.menu.filter(function (obj) {
+      return obj.category === array[3];
+    }));
+  } else if (menuFilter === array[5]) {
+    menuFilter = array[4];
+    sliderFunc(4);
+    renderMenu(_data_data__WEBPACK_IMPORTED_MODULE_2__.menu.filter(function (obj) {
+      return obj.category === array[4];
+    }));
+  }
+}
+
+function sliderIfForRightSlide(array) {
+  if (menuFilter === array[0]) {
+    menuFilter = array[1];
+    sliderFunc(1);
+    renderMenu(_data_data__WEBPACK_IMPORTED_MODULE_2__.menu.filter(function (obj) {
+      return obj.category === array[1];
+    }));
+  } else if (menuFilter === array[1]) {
+    menuFilter = array[2];
+    sliderFunc(2);
+    renderMenu(_data_data__WEBPACK_IMPORTED_MODULE_2__.menu.filter(function (obj) {
+      return obj.category === array[2];
+    }));
+  } else if (menuFilter === array[2]) {
+    menuFilter = array[3];
+    sliderFunc(3);
+    renderMenu(_data_data__WEBPACK_IMPORTED_MODULE_2__.menu.filter(function (obj) {
+      return obj.category === array[3];
+    }));
+  } else if (menuFilter === array[3]) {
+    menuFilter = array[4];
+    sliderFunc(4);
+    renderMenu(_data_data__WEBPACK_IMPORTED_MODULE_2__.menu.filter(function (obj) {
+      return obj.category === array[4];
+    }));
+  } else if (menuFilter === array[4]) {
+    menuFilter = array[5];
+    sliderFunc(5);
+    renderMenu(_data_data__WEBPACK_IMPORTED_MODULE_2__.menu.filter(function (obj) {
+      return obj.category === array[5];
+    }));
+  } else if (menuFilter === array[5]) {
+    menuFilter = array[0];
+    sliderFunc(0);
+    renderMenu(_data_data__WEBPACK_IMPORTED_MODULE_2__.menu.filter(function (obj) {
+      return obj.category === array[0];
     }));
   }
 }
 
 rightLeftSlider[0].addEventListener('click', function () {
-  sliderIf('Burger', 'Pizza', 'Sandwich', 0, 1, 2);
+  sliderIfForLeftSlide(menuCategoryNames);
 });
 rightLeftSlider[1].addEventListener('click', function () {
-  sliderIf('Burger', 'Sandwich', 'Pizza', 0, 2, 1);
+  sliderIfForRightSlide(menuCategoryNames);
 });
 var popupBasket = document.querySelector('.basket');
 var closePopUpBtn = document.querySelectorAll('.close_pop_btn');

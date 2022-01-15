@@ -1,7 +1,7 @@
 import FavoriteItem from "./Components/pop-up-favorites/pop-up-favorites";
 
 const btnSearch = document.querySelector('.loop')
-const inputSearch = document.querySelector('#inputSearch')
+const inputSearch = document.querySelector('.inputSearch')
 const closeBtn = document.querySelector('.close_btn')
 function showInput() {
     inputSearch.classList.add('show')
@@ -112,26 +112,68 @@ function sliderFunc(i) {
     hideTabContent()
     showTabContent(i)
 }
-function sliderIf(string, string2, string3, i, i2, i3){
-    if (menuFilter === string){
-        menuFilter = string3
-        sliderFunc(i3)
-        renderMenu(menu.filter(obj => obj.category === string3))
-    } else if (menuFilter === string3){
-        menuFilter = string2
-        sliderFunc(i2)
-        renderMenu(menu.filter(obj => obj.category === string2))
-    } else if (menuFilter === string2){
-        menuFilter = string
-        sliderFunc(i)
-        renderMenu(menu.filter(obj => obj.category === string))
+
+const menuCategoryNames = ['Burger','Pizza','Sandwich','Salad','Desert', 'Drink']
+function sliderIfForLeftSlide(array){
+    if (menuFilter === array[0]){
+        menuFilter = array[5]
+        sliderFunc(5)
+        renderMenu(menu.filter(obj => obj.category === array[5]))
+    } else if (menuFilter === array[1]){
+        menuFilter = array[0]
+        sliderFunc(0)
+        renderMenu(menu.filter(obj => obj.category === array[0]))
+    } else if (menuFilter === array[2]){
+        menuFilter = array[1]
+        sliderFunc(1)
+        renderMenu(menu.filter(obj => obj.category === array[1]))
+    }else if (menuFilter === array[3]){
+        menuFilter = array[2]
+        sliderFunc(2)
+        renderMenu(menu.filter(obj => obj.category === array[2]))
+    }else if (menuFilter === array[4]){
+        menuFilter = array[3]
+        sliderFunc(3)
+        renderMenu(menu.filter(obj => obj.category === array[3]))
+    }else if (menuFilter === array[5]){
+        menuFilter = array[4]
+        sliderFunc(4)
+        renderMenu(menu.filter(obj => obj.category === array[4]))
     }
 }
+function sliderIfForRightSlide(array){
+    if (menuFilter === array[0]){
+        menuFilter = array[1]
+        sliderFunc(1)
+        renderMenu(menu.filter(obj => obj.category === array[1]))
+    } else if (menuFilter === array[1]){
+        menuFilter = array[2]
+        sliderFunc(2)
+        renderMenu(menu.filter(obj => obj.category === array[2]))
+    } else if (menuFilter === array[2]){
+        menuFilter = array[3]
+        sliderFunc(3)
+        renderMenu(menu.filter(obj => obj.category === array[3]))
+    }else if (menuFilter === array[3]){
+        menuFilter = array[4]
+        sliderFunc(4)
+        renderMenu(menu.filter(obj => obj.category === array[4]))
+    }else if (menuFilter === array[4]){
+        menuFilter = array[5]
+        sliderFunc(5)
+        renderMenu(menu.filter(obj => obj.category === array[5]))
+    }else if (menuFilter === array[5]){
+        menuFilter = array[0]
+        sliderFunc(0)
+        renderMenu(menu.filter(obj => obj.category === array[0]))
+    }
+}
+
 rightLeftSlider[0].addEventListener('click', ()=>{
-    sliderIf('Burger','Pizza','Sandwich', 0, 1, 2)
+    sliderIfForLeftSlide(menuCategoryNames)
 })
 rightLeftSlider[1].addEventListener('click', ()=>{
-    sliderIf('Burger','Sandwich','Pizza', 0, 2, 1)
+    sliderIfForRightSlide(menuCategoryNames)
 })
 const popupBasket = document.querySelector('.basket')
 const closePopUpBtn = document.querySelectorAll('.close_pop_btn')
