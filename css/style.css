@@ -430,6 +430,9 @@
     align-items: center;
     justify-content: space-between;
 }
+.pop_up .close_pop-up {
+    margin-right: 20px;
+}
 .basket .pop_up_item svg {
     color: #3D3D3D;
 }
@@ -556,7 +559,6 @@
     background: #3D3D3D;
     color: #fff;
 }
-
 .favorites .pop_up_item .wrap-addBtn {
     display: flex;
     justify-content: space-between;
@@ -574,8 +576,13 @@
     cursor: pointer;
 }
 @media (max-width: 1100px) {
-    .section-header .change_lang_box {
-        margin-top: 15%;
+    .section-header nav .lang_mobile {
+        display: flex;
+        max-width: 950px;
+        margin: 0;
+    }
+    .section-header nav .lang_desktop {
+        display: none;
     }
     .container {
         max-width: 900px;
@@ -623,7 +630,6 @@
     }
 }
 @media (max-width: 950px) {
-
     .section-aboutUs p {
         font-size: 16px;
         width: 350px;
@@ -737,6 +743,10 @@
     }
 }
 @media (max-width: 600px) {
+    .section-menu-items ul li {
+        font-size: 16px;
+        height: 30px;
+    }
     .section-header nav ul {
         width: 300px;
     }
@@ -801,6 +811,10 @@
     }
 }
 @media (max-width: 520px) {
+    .section-menu-items ul li {
+        font-size: 13px;
+        height: 20px;
+    }
     .section-header nav .wrap-menu-icons .search-wrap input {
         width: 120px;
     }
@@ -879,6 +893,10 @@
 
 }
 @media (max-width: 400px) {
+    .section-menu-items ul li {
+        height: 15px;
+        font-size: 12px;
+    }
     .section-header nav .container {
         max-height: 50px;
     }
