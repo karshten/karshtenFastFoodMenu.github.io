@@ -253,6 +253,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "menu": () => (/* binding */ menu)
 /* harmony export */ });
 /* harmony import */ var _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Components/menuItem/menuItem */ "./Components/menuItem/menuItem.js");
+
 var menu = [new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
   title: "Huge cheeseburger",
@@ -299,7 +300,7 @@ var menu = [new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["defa
   category: "Drink",
   old_price: 3.55,
   price: 3.55,
-  img: "./images/image 9.png",
+  img: "./images/i.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
@@ -347,7 +348,7 @@ var menu = [new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["defa
   category: "Drink",
   old_price: 3.55,
   price: 3.55,
-  img: "./images/image 9.png",
+  img: "./images/i.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
@@ -395,7 +396,7 @@ var menu = [new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["defa
   category: "Drink",
   old_price: 3.55,
   price: 3.55,
-  img: "./images/image 9.png",
+  img: "./images/i.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
@@ -443,7 +444,7 @@ var menu = [new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["defa
   category: "Drink",
   old_price: 3.55,
   price: 3.55,
-  img: "./images/image 9.png",
+  img: "./images/i.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
@@ -491,7 +492,7 @@ var menu = [new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["defa
   category: "Drink",
   old_price: 3.55,
   price: 3.55,
-  img: "./images/image 9.png",
+  img: "./images/i.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
@@ -539,7 +540,7 @@ var menu = [new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["defa
   category: "Drink",
   old_price: 3.55,
   price: 3.55,
-  img: "./images/image 9.png",
+  img: "./images/i.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
@@ -587,7 +588,7 @@ var menu = [new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["defa
   category: "Drink",
   old_price: 3.55,
   price: 3.55,
-  img: "./images/image 9.png",
+  img: "./images/i.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
@@ -635,7 +636,7 @@ var menu = [new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["defa
   category: "Drink",
   old_price: 3.55,
   price: 3.55,
-  img: "./images/image 9.png",
+  img: "./images/i.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }), new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["default"]({
   id: 1,
@@ -683,10 +684,9 @@ var menu = [new _Components_menuItem_menuItem__WEBPACK_IMPORTED_MODULE_0__["defa
   category: "Drink",
   old_price: 3.55,
   price: 3.55,
-  img: "./images/image 9.png",
+  img: "./images/i.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 })];
-
 
 /***/ }),
 

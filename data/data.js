@@ -1,5 +1,6 @@
-export const menu = [
+import MenuItem from "../Components/menuItem/menuItem";
 
+export const menu = [
   new MenuItem({
     id: 1,
     title: "Huge cheeseburger",
@@ -51,9 +52,10 @@ export const menu = [
     category: "Drink",
     old_price: 3.55,
     price: 3.55,
-    img: "./images/image 9.png",
+    img: "./images/i.jpg",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
-  }),  new MenuItem({
+  }),
+  new MenuItem({
     id: 1,
     title: "Huge cheeseburger",
     category: "Burger",
@@ -104,9 +106,9 @@ export const menu = [
     category: "Drink",
     old_price: 3.55,
     price: 3.55,
-    img: "./images/image 9.png",
+    img: "./images/i.jpg",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
-  }),  new MenuItem({
+  }),new MenuItem({
     id: 1,
     title: "Huge cheeseburger",
     category: "Burger",
@@ -157,9 +159,9 @@ export const menu = [
     category: "Drink",
     old_price: 3.55,
     price: 3.55,
-    img: "./images/image 9.png",
+    img: "./images/i.jpg",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
-  }),  new MenuItem({
+  }),new MenuItem({
     id: 1,
     title: "Huge cheeseburger",
     category: "Burger",
@@ -210,9 +212,9 @@ export const menu = [
     category: "Drink",
     old_price: 3.55,
     price: 3.55,
-    img: "./images/image 9.png",
+    img: "./images/i.jpg",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
-  }),  new MenuItem({
+  }),new MenuItem({
     id: 1,
     title: "Huge cheeseburger",
     category: "Burger",
@@ -263,9 +265,9 @@ export const menu = [
     category: "Drink",
     old_price: 3.55,
     price: 3.55,
-    img: "./images/image 9.png",
+    img: "./images/i.jpg",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
-  }),  new MenuItem({
+  }),new MenuItem({
     id: 1,
     title: "Huge cheeseburger",
     category: "Burger",
@@ -316,9 +318,9 @@ export const menu = [
     category: "Drink",
     old_price: 3.55,
     price: 3.55,
-    img: "./images/image 9.png",
+    img: "./images/i.jpg",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
-  }),  new MenuItem({
+  }),new MenuItem({
     id: 1,
     title: "Huge cheeseburger",
     category: "Burger",
@@ -369,9 +371,9 @@ export const menu = [
     category: "Drink",
     old_price: 3.55,
     price: 3.55,
-    img: "./images/image 9.png",
+    img: "./images/i.jpg",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
-  }),  new MenuItem({
+  }),new MenuItem({
     id: 1,
     title: "Huge cheeseburger",
     category: "Burger",
@@ -422,9 +424,9 @@ export const menu = [
     category: "Drink",
     old_price: 3.55,
     price: 3.55,
-    img: "./images/image 9.png",
+    img: "./images/i.jpg",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
-  }),  new MenuItem({
+  }),new MenuItem({
     id: 1,
     title: "Huge cheeseburger",
     category: "Burger",
@@ -475,9 +477,7 @@ export const menu = [
     category: "Drink",
     old_price: 3.55,
     price: 3.55,
-    img: "./images/image 9.png",
+    img: "./images/i.jpg",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
   }),
 ]
-
-import MenuItem from "../Components/menuItem/menuItem";
