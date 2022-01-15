@@ -641,7 +641,7 @@
 }
 @media (max-width: 850px) {
     .section-header .change_lang_box {
-        margin-top: 20%;
+        margin-top: 5%;
     }
     .section-delivery .delivery-box .item-delivery {
         width: 250px;
@@ -725,7 +725,6 @@
     .section-aboutUs .itemAbout {
         flex-wrap: nowrap;
     }
-
     .section-delivery .delivery-box .item-delivery {
         width: 170px;
         height: 200px;
@@ -743,6 +742,9 @@
     }
 }
 @media (max-width: 600px) {
+    .section-header .change_lang_box {
+        margin-top: 8%;
+    }
     .section-menu-items ul li {
         font-size: 16px;
         height: 30px;
@@ -824,9 +826,6 @@
     .section-header .close_btn svg {
         width: 16px;
         height: 16px;
-    }
-    .section-header .change_lang_box {
-        margin-top: 140px;
     }
     .favorites .pop_up_item .img-item {
         width: 120px;
